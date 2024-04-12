@@ -6,7 +6,7 @@
   "author": "radioegor146",
   "license": "MIT",
   "scripts": {
-    "main": "ts-node src/main.ts"
+    "main": "cd static && yarn build && cd .. && ts-node src/main.ts"
   },
   "dependencies": {
     "@types/debug": "^4.1.12",
