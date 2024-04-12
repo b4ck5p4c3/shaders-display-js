@@ -1,0 +1,77 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #1e1e1e;
+  color: white;
+}
+
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#editor {
+  flex: 4;
+}
+
+.deployer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#deploy {
+  border: 1px solid white;
+  padding: 10px;
+  background: #1e1e1e;
+  color: white;
+  cursor: pointer;
+}
+
+#deploy:hover {
+  background-color: gray;
+}
+
+#deploy:active {
+  background-color: dimgray;
+}
+
+.deploy-log {
+  outline: none;
+  resize: none;
+  flex: 1;
+  background: #1e1e1e;
+  color: white;
+}
+
+.success-log {
+  color: #0B0;
+}
+
+.warn-log {
+  color: #BB0;
+}
+
+.error-log {
+  color: #B00;
+}
