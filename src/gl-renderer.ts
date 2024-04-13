@@ -137,7 +137,7 @@ export class GLRenderer {
         for (let x = 0; x < this.width; x++) {
             data.push([]);
             for (let y = 0; y < this.height; y++) {
-                data[x].push(buffer[(x * this.height + y) * 4]);
+                data[x].push(buffer[(x * this.height + (this.height - y - 1)) * 4]);
             }
         }
 
