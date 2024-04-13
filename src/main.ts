@@ -31,7 +31,7 @@ socket.start();
 
 function sendFrame(frame: DisplayData): void {
     const displayFrame: Buffer[] = [];
-    for (const row of frame) {
+    for (const row of frame.reverse()) {
         displayFrame.push(Buffer.from(row));
     }
     socket.sendFrame(Buffer.concat(displayFrame));
