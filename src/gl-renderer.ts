@@ -134,10 +134,10 @@ export class GLRenderer {
 
         const data: DisplayData = [];
 
-        for (let x = 0; x < this.width; x++) {
+        for (let y = 0; y < this.height; y++) {
             data.push([]);
-            for (let y = 0; y < this.height; y++) {
-                data[x].push(buffer[((this.width - x - 1) * this.height + y) * 4]);
+            for (let x = 0; x < this.width; x++) {
+                data[y].push(buffer[(y * this.width + x) * 4]);
             }
         }
 
